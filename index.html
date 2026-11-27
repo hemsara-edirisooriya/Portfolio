@@ -9,8 +9,12 @@
   <link rel="stylesheet" href="style/style.css">
 </head>
 <body id="top">
+  
+  <canvas id="matrix-canvas" aria-hidden="true"></canvas>
+
 
   <header class="site-header">
+    
     <a href="#intro" class="logo">Hemsara</a>
     <button class="menu-toggle" aria-label="Toggle menu" onclick="document.querySelector('.nav').classList.toggle('open')">☰</button>
     <nav class="nav">
@@ -23,6 +27,8 @@
 
   <!-- INTRO -->
   <section id="intro" class="hero">
+    
+
     <div class="hero-inner">
       <p class="eyebrow">Hello</p>
       <h1>I'm Hemsara, a Software Engineering.</h1>
@@ -39,14 +45,41 @@
   </section>
 
   <!-- ABOUT -->
-  <section id="about" class="section">
-    <div class="container">
+<section id="about" class="section reveal-on-scroll">
+
+  <div class="container">
+    <h2 class="section-title">About Me.</h2>
+
+    <div class="about-text">
+      <p>I'm Hemsara, an aspiring Software Engineer with a passion for technology and web development. I am currently following a Software Engineering course at ICET, where I am developing my knowledge and skills in programming, software development, and problem-solving.</p>
+
+      <p>I enjoy learning new technologies, building creative projects, and improving my coding skills. My goal is to become a skilled Software Engineer and create innovative solutions that make a positive impact.</p>
+    </div>
+
+    <div class="grid-3">
+      <div>
+        <h4>Skills</h4>
+        <ul class="list">
+          <li>Product Design</li>
+          <li>UI/UX Design</li>
+          <li>Prototyping</li>
+          <li>Frontend Development</li>
+          <li>Backend Development</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+
+    <!-- <div class="container">
       <h2 class="section-title">About Me.</h2>
       <div class="about-text">
         <p>I'm Hemsara, an aspiring Software Engineer with a passion for technology and web development. I am currently following a Software Engineering course at ICET, where I am developing my knowledge and skills in programming, software development, and problem-solving.</p>
         <p>I enjoy learning new technologies, building creative projects, and improving my coding skills. My goal is to become a skilled Software Engineer and create innovative solutions that make a positive impact.</p>
       </div>
-      <div class="grid-3">
+      <div class="grid-3"> -->
         <!-- <div>
           <h4>Experience</h4>
           <ul class="list">
@@ -65,7 +98,7 @@
             <li>FWA of The Month — 2022</li>
           </ul>
         </div> -->
-        <div>
+        <!-- <div>
           <h4>Skills</h4>
           <ul class="list">
             <li>Product Design</li>
@@ -77,10 +110,10 @@
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
 
   <!-- WORKS -->
-  <!-- <section id="works" class="section alt">
+  <section id="works" class="section alt">
     <div class="container">
       <h2 class="section-title">Selected Works.</h2>
       <div class="works-grid">
@@ -92,10 +125,10 @@
         <article class="work c6"><div class="work-info"><h3>Tropical</h3><span>Frontend Design</span></div></article>
       </div>
     </div>
-  </section> -->
+  </section>
 
   <!-- TESTIMONIALS -->
-  <section class="section">
+  <!-- <section id="works" class="section">
     <div class="container">
       <h2 class="section-title">Hear it from My Happy Clients</h2>
       <div class="grid-2">
@@ -116,7 +149,7 @@
         <div><span class="num">85+</span><p>Positive Feedback</p></div>
       </div>
     </div>
-  </section>
+  </section> -->
 
   <!-- CONTACT -->
   <footer id="contact" class="footer">
@@ -144,6 +177,8 @@
       <p class="copyright">© 2026 Jonathan Doe. All rights reserved. <a href="#top">Back to top ↑</a></p>
     </div>
   </footer>
+
+  <script src="js/app.js"></script>
 
 </body>
 </html>
